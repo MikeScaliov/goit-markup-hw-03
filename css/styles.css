@@ -115,6 +115,23 @@ ul {
 }
 .nav-item {
 }
+
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.nav-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(#404bbf);
+}
+
 .nav-link {
   display: block;
   font-weight: 500;
